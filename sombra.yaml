@@ -1,9 +1,8 @@
 branch: sombra-app-template-install
 templates:
-  - name: playground-django-api
-    vars:
-      project: Django API Example
-      author: Pepe el cojo
-      email: pepe@elco.jo
-      entity: Emails
-  
+    - name: playground-django-api
+      vars:
+        author: Pepe el cojo
+        email: pepe@elco.jo
+        entity: Emails
+        project: Django API Example
