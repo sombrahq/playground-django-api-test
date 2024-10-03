@@ -1,6 +1,6 @@
 branch: sombra-app-template-install
 templates:
-  - name: playground-django-api
+  - name: sombrahq/playground-django-api-template
     vars:
       project: Django API Example
       author: Pepe el cojo
