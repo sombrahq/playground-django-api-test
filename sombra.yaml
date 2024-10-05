@@ -1,7 +1,7 @@
 branch: sombra-app-template-install
 templates:
     - name: sombrahq/playground-django-api-template
-      version: v0.5.0
+      version: v0.6.0
       vars:
         author: Pepe el cojo
         email: pepe@elco.jo

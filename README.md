@@ -1,8 +1,8 @@
-# Django API Example
+# Example
 
 ## Getting started
 
-Django API Example is a project template to quickly start an API application.
+Example is a project template to quickly start an API application.
 
 ## Development tools
 
@@ -75,8 +75,6 @@ make ci
 Feel free to add yourself to this list if you make a considerable contribution.
 
 - <no value>
-- Yusnel Rojas García
-
 
 ## License
 MIT

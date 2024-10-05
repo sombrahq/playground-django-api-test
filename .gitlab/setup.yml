@@ -1,0 +1,17 @@
+setup:
+  stage: setup
+  allow_failure: true
+  before_script:
+    - git config user.name "Sombra Templates"
+    - git config user.email "pepe@elco.jo"
+    - pip install pre-commit
+  script:
+    - test -n $GITLAB_PUSH_TOKEN
+    - echo ${$GITLAB_PUSH_TOKEN:0:5}
+    - bash -c "make qa-all || make qa-all"
+    - git add .
+    - git commit -m "add setup changes"
+    - git remote set-url --push origin https://sombra-bot:$GITLAB_PUSH_TOKEN@gitlab.com/$CI_PROJECT_PATH
+    - git push --follow-tags origin HEAD:$CI_COMMIT_REF_NAME
+  only:
+    - /^sombra\/.*$/
